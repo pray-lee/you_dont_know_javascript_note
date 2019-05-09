@@ -6,6 +6,7 @@ var MyModules = (function Manager() {
       deps[i] = modules[deps[i]]
     }
     modules[name] = impl.apply(impl, deps) // 核心
+    console.log(modules)
   }
   function get(name) {
     return modules[name]
